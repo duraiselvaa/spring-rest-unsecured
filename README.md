@@ -58,18 +58,75 @@ This specific application doesn't have any views, and the output comes in JSON f
 - click 'Send'
 - We could check the differnt tabs availble to verify 'Response (raw)', 'Response Headers' etc. 
 
-## REST API - URLs
+## REST API
 
-GET : - http://localhost:8080/rest/book - will return the list of all the books in the format - [{"id": "1","name":"REST handbook","author":"M","publication":"Disney"}{}{}]
+**URI** `http://localhost:9091/geogrep-rest/api/location`
 
-GET : http://localhost:8080/rest/book/x - will return the Entity with the given id 'x'
+**Request mappings**
 
-PUT : http://localhost:8080/rest/book - updates the given book with new detail - this requires the Book to be passed as the Request Param. - 
-{"id": "1","name":"REST handbook","author":"S","publication":"Sun"}
+<table>
+<tr>
+<td><b>Operation Description</b></td>
+<td><b>URI</b></td>
+<td><b>HTTP Method (Verb)</b></td>
+<td><b>Request Body</b></td>
+<td><b>Response on Success</b></td>
+<td><b>Response on Failure</b></td>
+</tr>
 
-DELETE : http://localhost:8080/rest/book/x - where x is the id of the entity to be deleted
+<tr>
+<td>Fetch all the books</td>
+<td>http://localhost:8080/rest/book</td>
+<td>GET</td>
+<td></td>
+<td>
+200 OK <p/>
+List&lt;Books&gt;
+</td>
+<td></td>
+</tr>
 
-POST : http://localhost:8080/rest/book - this requires the Book to be passed as the Request Param.
+<tr>
+<td>Fetch Book by id</td>
+<td>http://localhost:8080/rest/book/{id}</td>
+<td>GET</td>
+<td></td>
+<td>
+200 OK <p/>
+Book<p/>
+</td>
+<td>
+404 Not Found <p/>
+500 Server Error <p/>
+</td>
+</tr>
+
+<tr>
+<td>Delete a book</td>
+<td>http://localhost:8080/rest/book/{id}</td>
+<td>DELETE</td>
+<td></td>
+<td>204 No Content</td>
+<td>404 Not Found</td>
+</tr>
+
+<tr>
+<td>Create Book</td>
+<td>http://localhost:8080/rest/book</td>
+<td>POST</td>
+<td>Book</td>
+<td>201 Created</td>
+<td>500 Server Error</td>
+</tr>
+
+<tr>
+<td>Update Book</td>
+<td>http://localhost:8080/rest/book</td>
+<td>PUT</td>
+<td>Book</td>
+<td></td>
+<td>500 Server Error</td>
+</tr>
 
 
 ## Upcoming
