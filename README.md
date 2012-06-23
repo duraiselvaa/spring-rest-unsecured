@@ -60,8 +60,6 @@ This specific application doesn't have any views, and the output comes in JSON f
 
 ## REST API
 
-**URI** `http://localhost:9091/geogrep-rest/api/location`
-
 **Request mappings**
 
 <table>
@@ -127,6 +125,8 @@ Book<p/>
 <td></td>
 <td>500 Server Error</td>
 </tr>
+
+</table>
 
 
 ## Upcoming
