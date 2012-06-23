@@ -6,8 +6,8 @@
 - Note down the root password and the URL, port number to use for the connection parameters.
 - Create the sample table Book with the following fields:
 
--- id <br/>
--- name <br/>
+id <br/>
+name <br/>
 author <br/>
 publication <br/>
 
@@ -30,11 +30,9 @@ we can change them according to our requirement.
 
 - Directly build and deploy from STS using 'Run As -> Run on Server..'. If you have already installed Tomcat - you could specify that specific installation directory to be used with STS.
 
-- Build from command prompt using: <br/>
+- Build from command prompt and the genrated rest.war can be deployed in Tomcat <br/>
 
-'$ mvn clean install' <br/>
-
-and the generated rest.war needs to be deployed in Tomcat. 
+`$ mvn clean install` <br/>
 
 
 ## Test Instructions
