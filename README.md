@@ -6,18 +6,18 @@
 - Note down the root password and the URL, port number to use for the connection parameters.
 - Create the sample table Book with the following fields:
 
-id
-name
-author
-publication
+id <br/>
+name <br/>
+author <br/>
+publication <br/>
 
 
-Technology Stack
-================
+## Technology Stack
 
-1. Spring Data JPA
-2. Hibernate
-3. MySQL
+
+- Spring Data JPA
+- Hibernate
+- MySQL
 
 
 Using STS
