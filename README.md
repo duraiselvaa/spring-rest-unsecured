@@ -1,12 +1,10 @@
 spring-rest-unsecured
-=====================
 
-Prerequisite
-------------
+## Prerequisite
 
-1. Install MySQL for your corresponding operating system with MySQL workbench
-2. Note down the root password and the URL, port number to use for the connection parameters.
-3. Create the sample table Book with the following fields:
+- Install MySQL for your corresponding operating system with MySQL workbench
+- Note down the root password and the URL, port number to use for the connection parameters.
+- Create the sample table Book with the following fields:
 
 id
 name
