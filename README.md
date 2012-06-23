@@ -1,37 +1,36 @@
-spring-webservice
-=================
+spring-rest-unsecured
+=====================
 
-Prerequisite:
--------------
+Prerequisite
+------------
 
 1. Install MySQL for your corresponding operating system with MySQL workbench
-2. Create the sample table Book with the following fields:
+2. Note down the root password and the URL, port number to use for the connection parameters.
+3. Create the sample table Book with the following fields:
 
 id
 name
 author
 publication
 
-3. Note down the root password and the URL, port number to use for the connection parameters.
 
-
-Dependencies:
-=============
+Technology Stack
+================
 
 1. Spring Data JPA
 2. Hibernate
 3. MySQL
 
 
-Using STS:
+Using STS
 ==========
 
-It is very convenient to use STS to create the Spring project - so it creates the basic structure and required config files, then 
+It is very convenient to use STS to create the Spring project - it creates the basic structure and required config files, then 
 we can change them according to our requirement.
 
 
-Build Instructions:
-===================
+Build Instructions
+==================
 
 1. Directly build and deploy from STS using 'Run As -> Run on Server..'.
 
@@ -39,24 +38,28 @@ If you have already installed Tomcat - you could specify that specific installat
 
 2. Build from command prompt using:
 
-$ mvn clean install
+'$ mvn clean install'
 
 and the generated rest.war needs to be deployed in Tomcat. 
 
 
-Test Instructions:
-==================
+Test Instructions
+=================
 
 This specific application doesn't have any views, and the output comes in JSON format. This could be verified using
 
 1. CURL
-2. RESTClient (http://code.google.com/p/rest-client/)
+2. RESTClient
 
+REST Client
+===========
 
-The RESTClient could be opened in the browser once installed. 
+It can be downloaded from: http://code.google.com/p/rest-client/
 
-REST Client: How To use:
-============
+And could be opened in the browser once installed. 
+
+How To use
+==========
 
 1. choose the Request methods (GET, PUT, DELETE, POST)
 2. specify request headers if required - Accept:application/json (this is required to pass the data as JSON during POST and PUT)
@@ -67,8 +70,8 @@ REST Client: How To use:
 
 
 
-REST API - URLs:
-================
+REST API - URLs
+===============
 
 GET : - http://localhost:8080/rest/book - will return the list of all the books in the format - [{"id": "1","name":"REST handbook","author":"M","publication":"Disney"}{}{}]
 
@@ -82,9 +85,9 @@ DELETE : http://localhost:8080/rest/book/x - where x is the id of the entity to 
 POST : http://localhost:8080/rest/book - this requires the Book to be passed as the Request Param.
 
 
-Upcoming :
-==========
-REST with Spring Security
+Upcoming
+========
+Spring Rest Secured using Spring Security
 
 
 
