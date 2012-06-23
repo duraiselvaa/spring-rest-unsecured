@@ -6,8 +6,8 @@
 - Note down the root password and the URL, port number to use for the connection parameters.
 - Create the sample table Book with the following fields:
 
-id <br/>
-name <br/>
+-- id <br/>
+-- name <br/>
 author <br/>
 publication <br/>
 
@@ -20,56 +20,47 @@ publication <br/>
 - MySQL
 
 
-Using STS
-==========
+## Using STS
 
 It is very convenient to use STS to create the Spring project - it creates the basic structure and required config files, then 
 we can change them according to our requirement.
 
 
-Build Instructions
-==================
+## Build Instructions
 
-1. Directly build and deploy from STS using 'Run As -> Run on Server..'.
+- Directly build and deploy from STS using 'Run As -> Run on Server..'. If you have already installed Tomcat - you could specify that specific installation directory to be used with STS.
 
-If you have already installed Tomcat - you could specify that specific installation directory to be used with STS.
+- Build from command prompt using: <br/>
 
-2. Build from command prompt using:
-
-'$ mvn clean install'
+'$ mvn clean install' <br/>
 
 and the generated rest.war needs to be deployed in Tomcat. 
 
 
-Test Instructions
-=================
+## Test Instructions
 
 This specific application doesn't have any views, and the output comes in JSON format. This could be verified using
 
-1. CURL
-2. RESTClient
+- CURL
+- RESTClient
 
-REST Client
-===========
+
+## REST Client
 
 It can be downloaded from: http://code.google.com/p/rest-client/
 
 And could be opened in the browser once installed. 
 
-How To use
-==========
+### How To use REST Client
 
-1. choose the Request methods (GET, PUT, DELETE, POST)
-2. specify request headers if required - Accept:application/json (this is required to pass the data as JSON during POST and PUT)
-3. specify the Request Parameter (entity in JSON format to be saved or updated)
-4. Specify the URL 
-5. click 'Send'
-6. We could check the differnt tabs availble to verify 'Response (raw)', 'Response Headers' etc. 
+- choose the Request methods (GET, PUT, DELETE, POST)
+- specify request headers if required - Accept:application/json (this is required to pass the data as JSON during POST and PUT)
+- specify the Request Parameter (entity in JSON format to be saved or updated)
+- specify the URL 
+- click 'Send'
+- We could check the differnt tabs availble to verify 'Response (raw)', 'Response Headers' etc. 
 
-
-
-REST API - URLs
-===============
+## REST API - URLs
 
 GET : - http://localhost:8080/rest/book - will return the list of all the books in the format - [{"id": "1","name":"REST handbook","author":"M","publication":"Disney"}{}{}]
 
@@ -83,8 +74,8 @@ DELETE : http://localhost:8080/rest/book/x - where x is the id of the entity to 
 POST : http://localhost:8080/rest/book - this requires the Book to be passed as the Request Param.
 
 
-Upcoming
-========
+## Upcoming
+
 Spring Rest Secured using Spring Security
 
 
