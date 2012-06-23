@@ -1,5 +1,3 @@
-# spring-rest-unsecured
-
 ## Prerequisite
 
 - Install MySQL for your corresponding operating system with MySQL workbench
