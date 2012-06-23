@@ -39,17 +39,17 @@ we can change them according to our requirement.
 
 This specific application doesn't have any views, and the output comes in JSON format. This could be verified using
 
-- CURL
 - RESTClient
+- CURL
 
 
-## REST Client
+## RESTClient
 
-It can be downloaded from: http://code.google.com/p/rest-client/
+- This is an add-on to Firefox and could be installed from: https://addons.mozilla.org/en-US/firefox/addon/restclient/
+- Once installed the RESTClient icon will be available in the 'Navigation Toolbar' like any other add-on.
 
-And could be opened in the browser once installed. 
 
-### How To use REST Client
+### How to test using RESTClient
 
 - choose the Request methods (GET, PUT, DELETE, POST)
 - specify request headers if required - Accept:application/json (this is required to pass the data as JSON during POST and PUT)
